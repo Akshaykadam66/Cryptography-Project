@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script src="encrypt.js"></script>
+<style>
+.button1 {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+</style>
+</head>
+<body>
+<center>
+
+    <h1>Vigenere Cipher</h1>
+    <hr>
+    <br>
+    <h2>
+    
+            <label>Enter key for Encryption</label>
+            &nbsp;
+            <input id="passcode"/>
+            <br><br>
+            <lable>Type PlainText Here</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <textarea id="originalContent"></textarea>
+            <br><br>
+            <label>Encrypted Form</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <textarea id="encryptedContent"></textarea>
+            <br><br>
+            <label>Decrypted Form</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <textarea id="decryptedContent"></textarea>
+            <br>
+        </h2>
+        <button  class="button1" onclick="Encrypt('originalContent','encryptedContent','passcode')">Encrypt</button>
+        <button  class="button1" onclick="Decrypt('encryptedContent','decryptedContent','passcode')">Decrypt</button>
+</center>  
+</body>
+
+</html>
